@@ -1,8 +1,9 @@
-name: TechTrends - Package with Docker
+name: TechTrends-package and push
 
 on:
   push:
-    branches: [main]
+    branches: 
+    	- 'main'
 
 jobs:
   build:
@@ -29,4 +30,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ebdellimoemen/techtrends:latest, ebdellimoemen/techtrends:1.1.0
+          tags: ebdellimoemen/techtrends:1.1.0
