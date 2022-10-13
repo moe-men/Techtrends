@@ -1,6 +1,6 @@
 # set the base image. Since we're running
 
-FROM python:3.7-alpine
+FROM python:3.8
 WORKDIR /usr/src/app
 LABEL maintainer="techTrends"
 COPY ./techtrends/requirements.txt ./

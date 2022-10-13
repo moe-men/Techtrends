@@ -1,0 +1,31 @@
+## Docker commands used to build the application 
+# docker build -t techtrends:1.1.0 .
+
+
+## Docker commands used to run the application
+# docker run -p 7111:3111 techtrends:1.1.0
+
+
+## Docker commands used to get the application logs
+# docker logs nervous_cori
+
+
+## Logs from the container running the TechTrends application
+
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug:2022-10-13 18:48:48,265,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2022-10-13 18:48:48,265,  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2022-10-13 18:48:56,228, 172.17.0.1 - - [13/Oct/2022 18:48:56] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:2022-10-13 18:49:01,690, 172.17.0.1 - - [13/Oct/2022 18:49:01] "GET /metric HTTP/1.1" 404 -
+INFO:werkzeug:2022-10-13 18:49:41,052, 172.17.0.1 - - [13/Oct/2022 18:49:41] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2022-10-13 18:49:51,608, 172.17.0.1 - - [13/Oct/2022 18:49:51] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:2022-10-13 18:49:56,212, 172.17.0.1 - - [13/Oct/2022 18:49:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2022-10-13 18:49:56,272, 172.17.0.1 - - [13/Oct/2022 18:49:56] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2022-10-13 18:50:03,371, 172.17.0.1 - - [13/Oct/2022 18:50:03] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:2022-10-13 18:50:10,153, 172.17.0.1 - - [13/Oct/2022 18:50:10] "GET /metrics HTTP/1.1" 200 -
+

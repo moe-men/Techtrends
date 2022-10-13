@@ -10,6 +10,7 @@ import os
 def get_db_connection():
     connection = sqlite3.connect('database.db')
     connection.row_factory = sqlite3.Row
+    app.config['connection_count'] = app.config['connection_count'] + 1
     return connection
 
 # Function to get a post using its ID
@@ -23,6 +24,7 @@ def get_post(post_id):
 # Define the Flask application
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
+app.config['connection_count'] = 0
 
 # Define the main route of the web application 
 @app.route('/')
