@@ -2,6 +2,8 @@ import sqlite3
 
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
+import logging
+import os
 
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
@@ -65,6 +67,45 @@ def create():
 
     return render_template('create.html')
 
+
+
+# Define the healthz page
+@app.route("/healthz")
+def healthz():
+    try:
+        connection = get_db_connection()
+        connection.cursor()
+        connection.execute("SELECT * FROM posts")
+        connection.close()
+        return {"result": "OK - healthy"}
+    except Exception:
+        return {"result": "ERROR - unhealthy"}, 500
+        
+# Define metrics endpoint
+@app.route("/metrics")
+def metrics():
+    connection = get_db_connection()
+    posts = connection.execute("SELECT * FROM posts").fetchall()
+    connection.close()
+    post_count = len(posts)
+    data = {"db_connection_count": app.config['connection_count'], "post_count": post_count}
+    return data
+    
+    
+def log():
+    log_level = os.getenv("LOGLEVEL", "DEBUG").upper()
+    log_level = (
+        getattr(logging, log_level)
+        if log_level in ["CRITICAL", "DEBUG", "ERROR", "INFO", "WARNING",]
+        else logging.DEBUG
+    )
+
+    logging.basicConfig(
+        format='%(levelname)s:%(name)s:%(asctime)s, %(message)s',
+                level=log_level,
+    )        
+
 # start the application on port 3111
 if __name__ == "__main__":
+   log()
    app.run(host='0.0.0.0', port='3111')
