@@ -6,12 +6,13 @@ metadata:
 spec: 
   destination: 
     namespace: default
-    server: "https://kubernetes.default.svc"
+    server: https://kubernetes.default.svc
   project: default
   source: 
     helm: 
       valueFiles: 
         - values-staging.yaml
-    repoURL: "https://github.com/moe-men/Techtrends"
+    path: helm
+    repoURL: https://github.com/moe-men/Techtrends
     targetRevision: HEAD
 
