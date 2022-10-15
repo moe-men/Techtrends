@@ -17,15 +17,132 @@
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
-WARNING:werkzeug:2022-10-13 18:48:48,265,  * Running on all addresses.
+2022-10-15 10:55:14,416 WARNING   * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-INFO:werkzeug:2022-10-13 18:48:48,265,  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-INFO:werkzeug:2022-10-13 18:48:56,228, 172.17.0.1 - - [13/Oct/2022 18:48:56] "GET /healthz HTTP/1.1" 200 -
-INFO:werkzeug:2022-10-13 18:49:01,690, 172.17.0.1 - - [13/Oct/2022 18:49:01] "GET /metric HTTP/1.1" 404 -
-INFO:werkzeug:2022-10-13 18:49:41,052, 172.17.0.1 - - [13/Oct/2022 18:49:41] "GET /metrics HTTP/1.1" 200 -
-INFO:werkzeug:2022-10-13 18:49:51,608, 172.17.0.1 - - [13/Oct/2022 18:49:51] "GET /metrics HTTP/1.1" 200 -
-INFO:werkzeug:2022-10-13 18:49:56,212, 172.17.0.1 - - [13/Oct/2022 18:49:56] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:2022-10-13 18:49:56,272, 172.17.0.1 - - [13/Oct/2022 18:49:56] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:2022-10-13 18:50:03,371, 172.17.0.1 - - [13/Oct/2022 18:50:03] "GET /healthz HTTP/1.1" 200 -
-INFO:werkzeug:2022-10-13 18:50:10,153, 172.17.0.1 - - [13/Oct/2022 18:50:10] "GET /metrics HTTP/1.1" 200 -
+2022-10-15 10:55:14,416 INFO      * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2022-10-15 10:55:14,416 WARNING   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-10-15 10:55:14,416 INFO      * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2022-10-15 10:55:35,783 DEBUG    Getting all posts..
+2022-10-15 10:55:35,783 DEBUG    Connection to the database..
+2022-10-15 10:55:35,783 DEBUG    Getting all posts..
+2022-10-15 10:55:35,783 DEBUG    Connection to the database..
+2022-10-15 10:55:35,793 INFO     172.17.0.1 - - [15/Oct/2022 10:55:35] "GET / HTTP/1.1" 200 -
+2022-10-15 10:55:35,793 INFO     172.17.0.1 - - [15/Oct/2022 10:55:35] "GET / HTTP/1.1" 200 -
+2022-10-15 10:55:35,869 INFO     172.17.0.1 - - [15/Oct/2022 10:55:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:55:35,869 INFO     172.17.0.1 - - [15/Oct/2022 10:55:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:55:36,003 INFO     172.17.0.1 - - [15/Oct/2022 10:55:36] "GET /favicon.ico HTTP/1.1" 404 -
+2022-10-15 10:55:36,003 INFO     172.17.0.1 - - [15/Oct/2022 10:55:36] "GET /favicon.ico HTTP/1.1" 404 -
+2022-10-15 10:55:48,131 DEBUG    Get post 1..
+2022-10-15 10:55:48,131 DEBUG    Get post 1..
+2022-10-15 10:55:48,131 DEBUG    Connection to the database..
+2022-10-15 10:55:48,131 DEBUG    Connection to the database..
+2022-10-15 10:55:48,131 DEBUG    <sqlite3.Row object at 0x7ff86ead2770>
+2022-10-15 10:55:48,132 DEBUG    Returning post 1: 2020 CNCF Annual Report..
+2022-10-15 10:55:48,131 DEBUG    <sqlite3.Row object at 0x7ff86ead2770>
+2022-10-15 10:55:48,132 DEBUG    Returning post 1: 2020 CNCF Annual Report..
+2022-10-15 10:55:48,134 INFO     172.17.0.1 - - [15/Oct/2022 10:55:48] "GET /1 HTTP/1.1" 200 -
+2022-10-15 10:55:48,134 INFO     172.17.0.1 - - [15/Oct/2022 10:55:48] "GET /1 HTTP/1.1" 200 -
+2022-10-15 10:55:48,187 INFO     172.17.0.1 - - [15/Oct/2022 10:55:48] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:55:48,187 INFO     172.17.0.1 - - [15/Oct/2022 10:55:48] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:55:53,233 DEBUG    Getting all posts..
+2022-10-15 10:55:53,233 DEBUG    Connection to the database..
+2022-10-15 10:55:53,233 DEBUG    Getting all posts..
+2022-10-15 10:55:53,233 DEBUG    Connection to the database..
+2022-10-15 10:55:53,234 INFO     172.17.0.1 - - [15/Oct/2022 10:55:53] "GET / HTTP/1.1" 200 -
+2022-10-15 10:55:53,234 INFO     172.17.0.1 - - [15/Oct/2022 10:55:53] "GET / HTTP/1.1" 200 -
+2022-10-15 10:55:53,289 INFO     172.17.0.1 - - [15/Oct/2022 10:55:53] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:55:53,289 INFO     172.17.0.1 - - [15/Oct/2022 10:55:53] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:08,899 DEBUG    /create post endpoint reached..
+2022-10-15 10:56:08,899 DEBUG    /create post endpoint reached..
+2022-10-15 10:56:08,905 INFO     172.17.0.1 - - [15/Oct/2022 10:56:08] "GET /create HTTP/1.1" 200 -
+2022-10-15 10:56:08,905 INFO     172.17.0.1 - - [15/Oct/2022 10:56:08] "GET /create HTTP/1.1" 200 -
+2022-10-15 10:56:08,954 INFO     172.17.0.1 - - [15/Oct/2022 10:56:08] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:08,954 INFO     172.17.0.1 - - [15/Oct/2022 10:56:08] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:18,884 DEBUG    Get post 2..
+2022-10-15 10:56:18,884 DEBUG    Connection to the database..
+2022-10-15 10:56:18,884 DEBUG    Get post 2..
+2022-10-15 10:56:18,884 DEBUG    Connection to the database..
+2022-10-15 10:56:18,885 DEBUG    <sqlite3.Row object at 0x7ff86ead2810>
+2022-10-15 10:56:18,885 DEBUG    <sqlite3.Row object at 0x7ff86ead2810>
+2022-10-15 10:56:18,885 DEBUG    Returning post 2: KubeCon + CloudNativeCon 2021..
+2022-10-15 10:56:18,885 INFO     172.17.0.1 - - [15/Oct/2022 10:56:18] "GET /2 HTTP/1.1" 200 -
+2022-10-15 10:56:18,885 DEBUG    Returning post 2: KubeCon + CloudNativeCon 2021..
+2022-10-15 10:56:18,885 INFO     172.17.0.1 - - [15/Oct/2022 10:56:18] "GET /2 HTTP/1.1" 200 -
+2022-10-15 10:56:18,943 INFO     172.17.0.1 - - [15/Oct/2022 10:56:18] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:18,943 INFO     172.17.0.1 - - [15/Oct/2022 10:56:18] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:22,369 DEBUG    Get post 77..
+2022-10-15 10:56:22,370 DEBUG    Connection to the database..
+2022-10-15 10:56:22,369 DEBUG    Get post 77..
+2022-10-15 10:56:22,370 DEBUG    Connection to the database..
+2022-10-15 10:56:22,370 WARNING  Post id 77 not found..
+2022-10-15 10:56:22,370 WARNING  Post id 77 not found..
+2022-10-15 10:56:22,373 INFO     172.17.0.1 - - [15/Oct/2022 10:56:22] "GET /77 HTTP/1.1" 404 -
+2022-10-15 10:56:22,373 INFO     172.17.0.1 - - [15/Oct/2022 10:56:22] "GET /77 HTTP/1.1" 404 -
+2022-10-15 10:56:22,435 INFO     172.17.0.1 - - [15/Oct/2022 10:56:22] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:22,435 INFO     172.17.0.1 - - [15/Oct/2022 10:56:22] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:34,995 DEBUG    Get post 7..
+2022-10-15 10:56:34,995 DEBUG    Get post 7..
+2022-10-15 10:56:34,996 DEBUG    Connection to the database..
+2022-10-15 10:56:34,996 DEBUG    Connection to the database..
+2022-10-15 10:56:34,996 WARNING  Post id 7 not found..
+2022-10-15 10:56:34,996 WARNING  Post id 7 not found..
+2022-10-15 10:56:34,997 INFO     172.17.0.1 - - [15/Oct/2022 10:56:34] "GET /7 HTTP/1.1" 404 -
+2022-10-15 10:56:34,997 INFO     172.17.0.1 - - [15/Oct/2022 10:56:34] "GET /7 HTTP/1.1" 404 -
+2022-10-15 10:56:35,056 INFO     172.17.0.1 - - [15/Oct/2022 10:56:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:35,056 INFO     172.17.0.1 - - [15/Oct/2022 10:56:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:44,528 DEBUG    /about endpoint reached..
+2022-10-15 10:56:44,528 DEBUG    /about endpoint reached..
+2022-10-15 10:56:44,532 INFO     172.17.0.1 - - [15/Oct/2022 10:56:44] "GET /about HTTP/1.1" 200 -
+2022-10-15 10:56:44,532 INFO     172.17.0.1 - - [15/Oct/2022 10:56:44] "GET /about HTTP/1.1" 200 -
+2022-10-15 10:56:44,600 INFO     172.17.0.1 - - [15/Oct/2022 10:56:44] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:44,600 INFO     172.17.0.1 - - [15/Oct/2022 10:56:44] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:53,279 DEBUG    Getting all posts..
+2022-10-15 10:56:53,279 DEBUG    Getting all posts..
+2022-10-15 10:56:53,279 DEBUG    Connection to the database..
+2022-10-15 10:56:53,279 DEBUG    Connection to the database..
+2022-10-15 10:56:53,281 INFO     172.17.0.1 - - [15/Oct/2022 10:56:53] "GET / HTTP/1.1" 200 -
+2022-10-15 10:56:53,281 INFO     172.17.0.1 - - [15/Oct/2022 10:56:53] "GET / HTTP/1.1" 200 -
+2022-10-15 10:56:53,344 INFO     172.17.0.1 - - [15/Oct/2022 10:56:53] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:56:53,344 INFO     172.17.0.1 - - [15/Oct/2022 10:56:53] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:07,656 DEBUG    /create post endpoint reached..
+2022-10-15 10:57:07,656 DEBUG    /create post endpoint reached..
+2022-10-15 10:57:07,657 INFO     172.17.0.1 - - [15/Oct/2022 10:57:07] "GET /create HTTP/1.1" 200 -
+2022-10-15 10:57:07,657 INFO     172.17.0.1 - - [15/Oct/2022 10:57:07] "GET /create HTTP/1.1" 200 -
+2022-10-15 10:57:07,716 INFO     172.17.0.1 - - [15/Oct/2022 10:57:07] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:07,716 INFO     172.17.0.1 - - [15/Oct/2022 10:57:07] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:17,872 DEBUG    /create post endpoint reached..
+2022-10-15 10:57:17,872 DEBUG    /create post endpoint reached..
+2022-10-15 10:57:17,872 DEBUG    Connection to the database..
+2022-10-15 10:57:17,872 DEBUG    Connection to the database..
+2022-10-15 10:57:17,875 INFO     172.17.0.1 - - [15/Oct/2022 10:57:17] "POST /create HTTP/1.1" 302 -
+2022-10-15 10:57:17,875 INFO     172.17.0.1 - - [15/Oct/2022 10:57:17] "POST /create HTTP/1.1" 302 -
+2022-10-15 10:57:17,903 DEBUG    Getting all posts..
+2022-10-15 10:57:17,903 DEBUG    Connection to the database..
+2022-10-15 10:57:17,903 DEBUG    Getting all posts..
+2022-10-15 10:57:17,903 DEBUG    Connection to the database..
+2022-10-15 10:57:17,905 INFO     172.17.0.1 - - [15/Oct/2022 10:57:17] "GET / HTTP/1.1" 200 -
+2022-10-15 10:57:17,905 INFO     172.17.0.1 - - [15/Oct/2022 10:57:17] "GET / HTTP/1.1" 200 -
+2022-10-15 10:57:17,972 INFO     172.17.0.1 - - [15/Oct/2022 10:57:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:17,972 INFO     172.17.0.1 - - [15/Oct/2022 10:57:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:20,680 DEBUG    Get post 7..
+2022-10-15 10:57:20,680 DEBUG    Connection to the database..
+2022-10-15 10:57:20,680 DEBUG    Get post 7..
+2022-10-15 10:57:20,680 DEBUG    Connection to the database..
+2022-10-15 10:57:20,681 DEBUG    <sqlite3.Row object at 0x7ff86ead2ef0>
+2022-10-15 10:57:20,681 DEBUG    <sqlite3.Row object at 0x7ff86ead2ef0>
+2022-10-15 10:57:20,681 DEBUG    Returning post 7: Test_article..
+2022-10-15 10:57:20,681 DEBUG    Returning post 7: Test_article..
+2022-10-15 10:57:20,681 INFO     172.17.0.1 - - [15/Oct/2022 10:57:20] "GET /7 HTTP/1.1" 200 -
+2022-10-15 10:57:20,681 INFO     172.17.0.1 - - [15/Oct/2022 10:57:20] "GET /7 HTTP/1.1" 200 -
+2022-10-15 10:57:20,740 INFO     172.17.0.1 - - [15/Oct/2022 10:57:20] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:20,740 INFO     172.17.0.1 - - [15/Oct/2022 10:57:20] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:24,548 DEBUG    Getting all posts..
+2022-10-15 10:57:24,548 DEBUG    Connection to the database..
+2022-10-15 10:57:24,548 DEBUG    Getting all posts..
+2022-10-15 10:57:24,548 DEBUG    Connection to the database..
+2022-10-15 10:57:24,550 INFO     172.17.0.1 - - [15/Oct/2022 10:57:24] "GET / HTTP/1.1" 200 -
+2022-10-15 10:57:24,550 INFO     172.17.0.1 - - [15/Oct/2022 10:57:24] "GET / HTTP/1.1" 200 -
+2022-10-15 10:57:24,619 INFO     172.17.0.1 - - [15/Oct/2022 10:57:24] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-15 10:57:24,619 INFO     172.17.0.1 - - [15/Oct/2022 10:57:24] "GET /static/css/main.css HTTP/1.1" 304 -
 

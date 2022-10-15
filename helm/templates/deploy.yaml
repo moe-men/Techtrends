@@ -3,14 +3,14 @@ kind: Deployment
 metadata:
   annotations:
   labels:
-    app: techtrends
-  name: techtrends
-  namespace: sandbox
+    app: {{ .Values.appname }}
+  name: {{ .Values.appname }}
+  namespace: {{ .Values.namespace.name }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: techtrends
+      app: {{ .Values.appname }}
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -19,23 +19,23 @@ spec:
   template:
     metadata:
       labels:
-        app: techtrends
+        app: {{ .Values.appname }}
     spec:
       containers:
-        - image: ebdellimoemen/techtrends:1.1.0
-          imagePullPolicy: IfNotPresent
-          name: techtrends
+        - image: {{ .Values.image.dockerRegistry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          name: {{ .Values.appname }}
           ports:
-            - containerPort: 3111
+            - containerPort: {{ .Values.containerPort }}
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /healthz
-              port: 3111
+              path: {{ .Values.readinessProbe.path }}
+              port: {{ .Values.readinessProbe.port }}
           readinessProbe:
             httpGet:
-              path: /healthz
-              port: 3111
+              path: {{ .Values.readinessProbe.path }}
+              port: {{ .Values.readinessProbe.port }}
           resources:
             requests:
               memory: "64Mi"

@@ -10,9 +10,9 @@ service:
 
 image:
   repository: techtrends
-  tag: latest
+  tag: 1.1.0
   pullPolicy: IfNotPresent
-  dockerRegistry: tkonthemove
+  dockerRegistry: ebdellimoemen
 
 replicaCount: 1
 
