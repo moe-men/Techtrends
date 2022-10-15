@@ -30,8 +30,8 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: {{ .Values.readinessProbe.path }}
-              port: {{ .Values.readinessProbe.port }}
+              path: {{ .Values.livenessProbe.path }}
+              port: {{ .Values.livenessProbe.port }}
           readinessProbe:
             httpGet:
               path: {{ .Values.readinessProbe.path }}
