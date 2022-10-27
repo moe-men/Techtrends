@@ -17,7 +17,7 @@ Techtrends project using :
 
 * Github action for continuous integration
 
-![GithubAction](screenshots/ci-github-actions.png)
+![GithubAction](screenshots/ci-github-action.png)
 
 * ArgoCD + Helm chart for continuous development
 
